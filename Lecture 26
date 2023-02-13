@@ -1,0 +1,24 @@
+LECTURE 26
+
+package abstraction;
+
+public class COMPUTE {
+	static pair getMinMax(long a[], long n) {
+		int min = arr[0];
+		for(int i = 0 ; i<n; i++) {
+			if(arr[i]<min)
+			{
+				min=arr[i];
+			}
+		}
+		
+		long max= arr[0];
+		for(int i = 0 ; i<n; i++) {
+			if(arr[i]>max)
+			{
+				max=arr[i];
+			}
+		}
+    }
+
+}
