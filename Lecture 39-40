@@ -1,0 +1,40 @@
+LECTURE 39-40
+
+
+package abstraction;
+
+import java.util.Scanner;
+
+public class Anagram2{
+	
+	static boolean isAnagram(String s1, String s2) {
+		
+		if(s1.length() ! = s2.length()) return false;
+		
+		s1 = s1.toLowerCase();
+		s2 = s2.toLowerCase();
+		
+		int n = s1.length();
+		
+		int freArr1[] = new int [26];
+		int freArr2[] = new int [26];
+		
+		
+		for(int i=0; i<n; i++) {
+			int index1 = s1.charAt(i) - 'a';
+			freArr1[index]++;
+		}
+		
+		for(int i=0; i<26; i++) {
+			if(freArr1[i] ! = freArr2[i]) return false;
+		}
+		return true;
+		
+		}
+
+	public static void main(String[] args) {
+		System.out.println(isAnagram("CAT", "TAC"));
+		System.out.println(isAnagram("CAT", "TAG"));
+		System.out.println(isAnagram("CAT", "TACC"));
+	}
+}
