@@ -1,0 +1,29 @@
+LECTURE 45
+
+
+package abstraction;
+
+import java.util.Scanner;
+
+
+
+public class GfG{
+	
+	int getNth(Node head, int n) {
+		Node slow = head;
+		Node fast = head;
+		
+		for(int i = 0; i<n ; i++){
+			if(fast== null) return -1;
+			fast = fast.next;
+		}
+		
+		while(fast!=null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+		
+		return slow data;
+		
+	}
+}
